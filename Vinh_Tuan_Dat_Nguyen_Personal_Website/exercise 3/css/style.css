@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #b2d5dd;
+  font-family: verdana, arial, sans-serif;
+}
+
+header {
+  background-color: #19586f;
+  color:#ffffff;
+  padding: 2%;
+  text-align: center;
+}
+
+/* specificity targets elements inside of parents */
+header h1 {
+  font-size: 58px;
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-size: 22px;
+  font-family: georgia, times, serif;
+  font-style: italic;
+}
+
+
+nav {
+  background-color: #233438;
+    text-align: center;
+}
+
+nav a:link {
+  background-color: #ffffff;
+  color:#222;
+  padding: 1% 12%;
+  display:inline-block;
+  text-decoration: none;
+
+}
+
+nav a:visited {
+  color: #006400;
+}
+
+nav a:hover {
+  color: chocolate;
+  background-color: #233438;
+}
+/* a class for the links */
+nav a.active {
+  color: #ffffff;
+  background-color: #3b7285;
+}
+
+article {
+  padding:2%;
+  font-family: georgia;
+}
+
+article h1 {
+  font-size: 38px;
+  text-transform: capitalize;
+  margin-bottom: .5%;
+}
+
+article h2 {
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-bottom: .5%;
+}
+
+article p {
+  margin-bottom: 1%;
+  font-size: 18px;
+  line-height: 24px;
+  text-indent: 50px;
+}
+
+/* classes start with a . and can be used many times on the page */
+.pull_quote {
+  background-color: #233438;
+  color: #fff;
+  font-size: 22px;
+  padding:2%;
+  margin: 0 4% 1%;
+  font-family: georgia, times, serif;
+  font-style: italic;
+  border-left: solid 20px #3b7285;
+}
+
+figure {
+  margin-bottom: 1%;
+  width:20%;
+  float: right;
+  margin-right: 2%;
+  /* border:1px red solid; */
+}
+figure img {
+  /* use % when you want a responsivew img */
+  width:100%;
+}
+
+figcaption {
+  font-size: 20px;
+  font-family: georgia, times, serif;
+  font-style: italic;
+  text-align: center;
+}
+
+figure {
+  margin-bottom: 1%;
+  width:20%;
+  float: right;
+  margin-right: 2%;
+  /* border:1px red solid; */
+}
+figure img {
+  /* use % when you want a responsivew img */
+  width:100%;
+}
+
+figcaption {
+  font-size: 20px;
+  font-family: georgia, times, serif;
+  font-style: italic;
+  text-align: center;
+}
+
+footer {
+  padding: 2%;
+  background-color: #233438;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: georgia, times, serif;
+  font-style: normal;
+  text-align: center;
+}

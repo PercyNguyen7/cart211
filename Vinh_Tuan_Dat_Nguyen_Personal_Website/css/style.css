@@ -1,0 +1,169 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eafd89;
+  font-size: 24px;
+  font-family: verdana, arial, sans-serif;
+  box-sizing: border-box;
+}
+section.header_top {
+  background-color: #333333;
+  color:#ff9b6d;
+  width:100%;
+  height:25vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.header_top header {
+
+  text-align: center;
+}
+
+.header_top h2 {
+	font-family: Rancho,cursive ;
+	font-size:2em;
+	line-height:1em;
+	text-transform:capitalize;
+	color:#ffd37c;                            /*percy name*/
+	font-weight:normal;
+}
+
+.header_top h1 {
+	font-family: Rancho,cursive ;
+	font-size:3em;
+	text-transform:uppercase;
+  color:#ff9b6d;
+	font-weight:normal;
+}
+
+nav {
+  background-color: #7dbca9;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: Rancho,cursive ;
+  border-bottom: 10px solid #333333;
+  /* border-right: 10px solid #333333;
+  border-left: 10px solid #333333; */
+}
+
+nav a:link {
+  background-color: #ffd37c;
+  color: #ff9b6d;
+  padding: 1% 8%;
+  margin-left: 1%;
+  margin-right: 1%;
+  text-decoration:  underline;
+  text-transform: capitalize;
+}
+nav a:visited {
+  color: #233438;
+
+}
+
+nav a:hover {
+  color: #ffd37c;
+  background-color: #333333;
+}
+/* a class for the links */
+nav a.active {
+  color: #333333;
+  background-color: #ff9b6d;
+}
+
+article {
+  padding:2%;
+    padding-left: 4%;
+	font-family: Rancho,cursive ;
+
+}
+
+article h1 {
+  font-size: 38px;
+  text-transform: capitalize;
+  margin-bottom: .5%;
+
+}
+
+article h2 {
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-bottom: .5%;
+}
+
+article p {
+  /* margin-bottom: 2%; */
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 1%;
+
+}
+
+article a {
+  margin-bottom: 1%;
+  font-size: 24px;
+  line-height: 24px;
+}
+/* article a:link{
+  color:darkred;
+} */
+
+article a:visited{
+  color:darkblue;
+}
+
+section.arts{
+  background-color: #333333;
+  display: flex;
+  padding: 1%;
+}
+
+.arts figure {
+  background-color: #333333;
+  flex-grow: 1;
+}
+
+.arts figcaption{
+  color:#ff9b6d;
+  text-align: center;
+}
+
+figure img{
+  width: 98%;
+  margin-left:1%;
+  margin-top: 1%;
+}
+
+.quoteheading{
+  padding-bottom: 1%;
+  margin-top: 2%;
+}
+
+.pull_quote {
+  background-color: #7dbca9;
+  color: #ffd37c;
+  font-size: 24px;
+  padding:2%;
+  margin: 0 4% 1%;
+  font-family: "Rancho", times, serif;
+  font-style: italic;
+  border-left: solid 20px #ff9b6d;
+  border-right: solid 20px #ff9b6d;
+}
+
+footer {
+  padding:2%;
+  background-color: #333333;
+  color:#ff9b6d ;
+  font-size: 24px;
+  font-family: "Rancho", times, serif;
+  font-style:normal;
+  text-align:center;
+}

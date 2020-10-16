@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eafd89;
+  font-size: 24px;
+  font-family: verdana, arial, sans-serif;
+  box-sizing: border-box;
+}
+section.header_top {
+  background-color: #333333;
+  color:#ff9b6d;
+  width:100%;
+  height:25vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.header_top header {
+
+  text-align: center;
+}
+
+.header_top h2 {
+	font-family: Rancho,cursive ;
+	font-size:2em;
+	line-height:1em;
+	text-transform:capitalize;
+	color:#ffd37c;                            /*percy name*/
+	font-weight:normal;
+}
+
+.header_top h1 {
+	font-family: Rancho,cursive ;
+	font-size:3em;
+	text-transform:uppercase;
+  color:#ff9b6d;
+	font-weight:normal;
+}
+
+nav {
+  background-color: #7dbca9;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: Rancho,cursive ;
+  border-bottom: 10px solid #333333;
+  /* border-right: 10px solid #333333;
+  border-left: 10px solid #333333; */
+}
+
+nav a:link {
+  background-color: #ffd37c;
+  color: #ff9b6d;
+  padding: 1% 8%;
+  margin-left: 1%;
+  margin-right: 1%;
+  text-decoration:  underline;
+  text-transform: capitalize;
+}
+
+nav a:visited {
+  color: #333333;
+}
+
+nav a:hover {
+  color: #ff9b6d;
+  background-color: #333333;
+}
+/* a class for the links */
+nav a.active {
+  color: #333333;
+  background-color: #ff9b6d;
+}
+
+article {
+  padding:2%;
+  padding-left: 4%;
+	font-family: Rancho,cursive ;
+}
+
+article h1 {
+  font-size: 38px;
+  text-transform: capitalize;
+  margin-bottom: .5%;
+}
+
+article h2 {
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-bottom: .5%;
+}
+
+article p {
+  /* margin-bottom: 2%; */
+  line-height: 24px;
+  margin-bottom: 1%;
+
+}
+
+article a{
+  margin-bottom: 1%;
+  line-height: 24px;
+}
+/* article a:link{
+  color:darkred;
+} */
+
+article a:visited{
+  color:darkblue;
+}
+
+section.hw {
+  line-height: 34px;
+  min-height:60vh;
+  height:auto;
+  }
+
+
+
+figure {
+  margin-bottom: 1%;
+  width:30%;
+  margin-right: 2%;
+  padding-top: 2%;
+
+  float: right;
+  /* border:1px red solid; */
+}
+figure img {
+  /* use % when you want a responsivew img */
+  width:100%;
+}
+
+figcaption {
+  font-size: 20px;
+  font-family: "Rancho", times, serif;
+  font-style: italic;
+  text-align: center;
+}
+
+footer {
+  padding: 2%;
+  background-color: #333333;
+  color:#ff9b6d ;
+  font-size: 24px;
+  font-family: "Rancho", times, serif;
+  font-style: normal;
+  text-align: center;
+}
