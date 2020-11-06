@@ -1,7 +1,7 @@
-/* @font-face {
-  font-family:`Blackboard`;
-  src: url(fonts/Blackboard.ttf);
-} */
+@font-face {
+  font-family:`blackboard`;
+  src: url(fonts/blackboard.ttf);
+}
 
 * {
   margin: 0;
@@ -122,4 +122,8 @@ a:hover {
 
   width: 100%;
   height: 200vh;
+}
+
+p {
+    font-family: `blackboard`, arial;
 }
