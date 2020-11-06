@@ -126,7 +126,7 @@ a:hover {
 }
 
 .top_section .secondheading:hover{
-  width: 70%;
+  width: 60%;
   height:50px;
 
   background-color: #282320;
@@ -147,20 +147,9 @@ a:hover {
   justify-content: center;
   align-items: center;
 
-
-}
-.mid_section article{
-
-  margin:10%;
 }
 
-.mid_section p{
-text-align: center;
-color: antiquewhite;
-
-}
-
-/* .mid_section figure {
+.mid_section figure {
   display: flex;
   justify-content: center;
 
@@ -175,7 +164,7 @@ color: antiquewhite;
 .mid_section figure img:hover{
   width:80%;
   opacity:100%;
-} */
+}
 
 /* .bottom_section {
   background:url(../images/bg3.jpg) no-repeat center center;
