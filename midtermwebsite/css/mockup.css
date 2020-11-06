@@ -46,7 +46,7 @@ a:visited {
 
 a:hover {
   background-color: #261e19;
-  color:#e1e4cf;
+  color:antiquewhite;
   opacity: 100%;
 
   padding-top:3%;
@@ -103,7 +103,7 @@ a:hover {
   /* background-color: #261e19;
   color:#b0af9f; */
   background-color: #282320;
-  color:#838273;
+  color:antiquewhite;
   justify-content: flex-start;
 }
 
@@ -130,7 +130,7 @@ a:hover {
   height:50px;
 
   background-color: #282320;
-  color:#838273;
+  color:antiquewhite;;
   justify-content: flex-end;
 }
 
