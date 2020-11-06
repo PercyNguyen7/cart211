@@ -1,6 +1,8 @@
 @font-face {
   font-family:BlackBoard;
   src: url(fonts/BlackBoard.ttf);
+  font-family:Anarchaos;
+  src: url(fonts/Anarchaos.ttf);
 }
 
 * {
