@@ -1,6 +1,6 @@
 @font-face {
-  font-family:`blackboard`;
-  src: url(fonts/blackboard.ttf);
+  font-family:`BlackBoard`;
+  src: url(fonts/BlackBoard.ttf);
 }
 
 * {
@@ -125,5 +125,5 @@ a:hover {
 }
 
 p {
-    font-family: `blackboard`, arial;
+    font-family: `BlackBoard`, arial;
 }
