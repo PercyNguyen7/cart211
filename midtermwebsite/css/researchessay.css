@@ -3,6 +3,10 @@
   src: url(fonts/BlackBoard.ttf);
   font-family:Anarchaos;
   src: url(fonts/Anarchaos.ttf);
+
+
+  font-family:Sketchtica;
+  src:url(fonts/Sketchtica.ttf);
 }
 
 * {
@@ -156,9 +160,18 @@ nav a:hover {
 
 .mid_section p{
 text-align: center;
+font-size: 20px;
+font-family: Sketchtica;
+
 color: antiquewhite;
+opacity: 20%;
+transition: all 0.5s;
+
 }
 
+.mid_section p:hover {
+opacity: 100%;
+}
 .mid_section a:link{
 color: navajowhite;
 }
