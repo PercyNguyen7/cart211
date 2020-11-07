@@ -142,7 +142,7 @@ a:hover {
   background-size: cover;
 
   width: 100%;
-  height: 100vh;
+  height: 400vh;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -156,13 +156,13 @@ a:hover {
 }
 
 .mid_section figure img{
-  width:40%;
+  width:100%;
   opacity:10%;
   transition:all 0.5s;
 }
 
 .mid_section figure img:hover{
-  width:80%;
+
   opacity:100%;
 }
 
