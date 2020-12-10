@@ -1,0 +1,543 @@
+@font-face {
+  font-family: BlackBoard;
+  src: url(fonts/BlackBoard.ttf);
+
+  font-family: Sketchtica;
+  src: url(fonts/Sketchtica.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  /* background: black; */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  font-family: BlackBoard, arial;
+  font-size: 24px;
+
+  width: 100%;
+  position: fixed;
+  /* top:0;
+  left:0; */
+  z-index: +1;
+}
+
+nav a:link {
+  background-color: #0d0a07;
+  color: #e2a76d;
+  flex-grow: 1;
+  text-align: center;
+  text-decoration: none;
+
+  opacity: 50%;
+  /* border-radius: 0px 0px 100px 100px; */
+  transition: all 0.5s;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+
+}
+
+nav a:visited {
+  color: #e2a76d;
+}
+
+nav a:hover {
+  background-color: #261e19;
+  color: #e2a76d;
+  opacity: 100%;
+  animation:flicker-4 4s linear infinite both;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0 0 3pt 2pt #e2a76d;
+  z-index: +1;
+}
+
+/* nav a:active{
+  color:blanchedalmond;
+} */
+h1 {
+    animation:flicker-4 4s linear infinite both;
+}
+h2{
+    animation:flicker-5 4s linear infinite both;
+}
+h3{
+    animation:flicker-4 4s linear infinite both;
+}
+#s1 {
+  background: url(../images/bg1.jpg) no-repeat center center;
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.article1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: BlackBoard, arial;
+  padding: 2% 20%;
+}
+
+#s1 h1 {
+  display: flex;
+  justify-content: center;
+  color: #e2a76d;
+  font-size: 5em;
+  margin-bottom: 2%;
+  margin-top: 10%;
+  font-family: BlackBoard, arial;
+
+}
+
+#s1 h2 {
+  color: #e2a76d;
+  font-size: 1.6em;
+  margin-top: 2%;
+  font-family: BlackBoard, arial;
+  /* display: flex;
+  justify-content:center; */
+}
+
+.line {
+  margin: 0 auto;
+  width: 80%;
+  height: 3px;
+  background-color: #e2a76d;
+  animation:flicker-4 4s linear infinite both;
+}
+
+.line2 {
+  margin: 0 auto;
+  width: 70%;
+  height: 1px;
+  background-color: #e2a76d;
+  animation:flicker-5 4s linear infinite both;
+}
+
+.article1 p {
+  font-family: Sketchtica, Arial;
+  color: #e2a76d;
+  font-size: 1.2em;
+  margin-bottom: 2%;
+}
+
+.article1 label {
+  font-family: Sketchtica, Arial;
+  color: #e2a76d;
+  font-size: 1.2em;
+}
+
+#guessField {
+  background-color: #333;
+  color: #e2a76d;
+
+  box-shadow: 0 0 1pt 1pt #e2a76d;
+}
+/* #guessSubmit {
+  background-color: blanchedalmond;
+  color: #e2a76d;
+} */
+
+#s2 {
+  background: url(../images/bg2.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+#s2 h2 {
+  color: #e2a76d;
+  font-size: 1.6em;
+  font-family: BlackBoard, arial;
+  /* align-self: flex-start; */
+  padding: 2% 20%;
+}
+
+#s2 .p1 {
+  text-align: center;
+  font-family: Sketchtica, Arial;
+  color: #e2a76d;
+  font-size: 1.2em;
+  margin-bottom: 2%;
+  padding: 0% 20%;
+}
+.box-container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+figure.box {
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  width: 18%;
+  max-width: 350px;
+  height: 400px;
+
+  border-radius: 10%;
+  box-shadow: 0 0 3pt 2pt #e2a76d;
+  transition: all 0.3s;
+  /* make the parent relative to keep absolute children inside it */
+  position: relative;
+  /* overflow hidden to hide elements outside of parent */
+  overflow: hidden;
+}
+
+figure.n1 {
+  background: url(../images/h_indigeneous.jpg) left;
+  /* background-size: 147%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  align-self: flex-start;
+}
+
+figure.n2 {
+  background: url(../images/h_youth.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+figure.n3 {
+  background: url(../images/h_women.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  align-self: flex-start;
+}
+figure.n4 {
+  background: url(../images/h_veteran.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  align-self: center;
+}
+
+.box:hover {
+  box-shadow: 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0 black,
+    6px 6px 0 black;
+}
+
+.box h3 {
+  font-size: 2.2em;
+  font-family: Blackboard, Arial;
+  background: #e2a76d;
+  position: absolute;
+  top: 350px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.box:hover h3 {
+  top: 0px;
+}
+
+.box figcaption {
+  background: #111;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -400px;
+  transition: all 0.3s;
+}
+
+.box:hover figcaption {
+  bottom: -36px;
+}
+
+.box p {
+  font-size: 1.5em;
+  font-family: Sketchtica, Arial;
+  text-align: center;
+  color: #e2a76d;
+}
+
+#s3 {
+  background: url(../images/bg3.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+#s3 h2 {
+  color: #e2a76d;
+  font-size: 1.6em;
+  font-family: BlackBoard, arial;
+  /* align-self: flex-start; */
+  padding: 2% 20%;
+}
+
+#s3 .p2 {
+  text-align: center;
+  font-family: Sketchtica, Arial;
+  color: #e2a76d;
+  font-size: 1.2em;
+  margin-bottom: 2%;
+  padding: 0% 20%;
+}
+figure.n5 {
+  background: url(../images/h_unsheltered.jpg) center center;
+  /* background-size: 147%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  align-self: flex-start;
+}
+
+figure.n6 {
+  background: url(../images/h_esheltered.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+figure.n7 {
+  background: url(../images/h_paccomodated.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  align-self: flex-start;
+}
+figure.n8 {
+  background: url(../images/h_atrisk.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  align-self: center;
+}
+
+#s3 .box h3 {
+  font-size: 1.8em;
+  font-family: Blackboard, Arial;
+  background: #e2a76d;
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+#s3 .box:hover h3 {
+  top: 0px;
+}
+
+#s3 .box figcaption {
+  background: #111;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -400px;
+  transition: all 0.3s;
+}
+
+#s3 .box.n5:hover figcaption {
+  bottom: -28px;
+}
+
+#s3 .box.n6:hover figcaption {
+  bottom: -58px;
+}
+
+#s3 .box.n7:hover figcaption {
+  bottom: -58px;
+}
+#s3 .box.n8:hover figcaption {
+  bottom: -28px;
+}
+
+#s4 {
+  background: url(../images/bg1.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+#s4 h2 {
+  color: #e2a76d;
+  font-size: 1.6em;
+  font-family: BlackBoard, arial;
+  /* align-self: flex-start; */
+  padding: 2% 20%;
+}
+
+#s4 p {
+  font-family: Sketchtica, Arial;
+  color: #e2a76d;
+  font-size: 1.2em;
+  margin-bottom: 2%;
+  padding: 0% 20%;
+  column-count: 3;
+}
+#s5 {
+  background: url(../images/bg2.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 55vh;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 11%;
+  overflow: hidden;
+}
+
+#s5 article {
+  position: relative;
+  flex: 25%;
+  padding: 20px;
+  margin: 20px;
+  height: 300px;
+  position: relative;
+  border-radius: 20%;
+  box-shadow: 0 0 3pt 2pt #e2a76d;
+}
+#s5 article h3 {
+  text-align: center;
+  font-family: BlackBoard, Arial;
+  color: black;
+  font-size: 1.6em;
+  background: #e2a76d;
+  padding: 0% 4%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#s5 .cause1 {
+  background: url(../images/poverty.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+#s5 .cause2 {
+  background: url(../images/affordablehousing.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+#s5 .cause3 {
+  background: url(../images/domesticviolence.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: auto 150%;
+}
+#s6 {
+  background: url(../images/bg3.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+#s6 p {
+  font-family: Sketchtica, Arial;
+  color: #e2a76d;
+  font-size: 1.2em;
+  margin-bottom: 1%;
+
+}
+.guide {
+  opacity:0;
+  transition: opacity 0.3s;
+}
+.guide:hover{
+  opacity:1;
+}
+
+footer {
+  padding: 20px;
+  background: black;
+  font-family: Sketchtica, Arial;
+  color: #e2a76d;
+  box-shadow: 0 0 5pt 7pt #e2a76d;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+footer p{
+    animation:flicker-5 4s linear infinite both;
+}
+#logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  width: 10%;
+}
+#logo img {
+  width: 100%;
+  animation:flicker-4 4s linear infinite both;
+  /* position: relative; */
+  /* top:0px; */
+  /* opacity:0; */
+
+  border-radius: 20%;
+  box-shadow: 0 0 3pt 2pt #e2a76d;
+  /* animation: slideUp 3s cubic-bezier(.39,-0.3,.38,1.4)  1 forwards; */
+}
+
+.fade-in {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s 0.25s ease-out;
+  transform: translateX(0px);
+  transition: all 1s 0.25s ease-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateX(50px);
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2020-12-1 13:7:42
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@keyframes flicker-4{0%,100%{opacity:1}31.98%{opacity:1}32%{opacity:0}32.8%{opacity:0}32.82%{opacity:1}34.98%{opacity:1}35%{opacity:0}35.7%{opacity:0}35.72%{opacity:1}36.98%{opacity:1}37%{opacity:0}37.6%{opacity:0}37.62%{opacity:1}67.98%{opacity:1}68%{opacity:0}68.4%{opacity:0}68.42%{opacity:1}95.98%{opacity:1}96%{opacity:0}96.7%{opacity:0}96.72%{opacity:1}98.98%{opacity:1}99%{opacity:0}99.6%{opacity:0}99.62%{opacity:1}}
+
+/* ----------------------------------------------
+* Generated by Animista on 2020-12-1 13:17:47
+* Licensed under FreeBSD License.
+* See http://animista.net/license for more info.
+* w: http://animista.net, t: @cssanimista
+* ---------------------------------------------- */
+
+@keyframes flicker-5{0%,100%{opacity:1}0%{opacity:1}1%{opacity:1}1.02%{opacity:1}8.98%{opacity:1}9%{opacity:0}9.8%{opacity:0}9.82%{opacity:1}9.48%{opacity:1}9.5%{opacity:1}9.6%{opacity:1}9.62%{opacity:1}14.98%{opacity:1}15%{opacity:.5}15.8%{opacity:.5}15.82%{opacity:1}15.18%{opacity:1}15.2%{opacity:.7}16%{opacity:.7}16.02%{opacity:1}15.48%{opacity:1}15.5%{opacity:.5}16.2%{opacity:.5}16.22%{opacity:1}16.98%{opacity:1}17%{opacity:1}17.8%{opacity:1}17.82%{opacity:1}20.48%{opacity:1}20.5%{opacity:.9}21.3%{opacity:.9}21.32%{opacity:1}20.98%{opacity:1}21%{opacity:1}22%{opacity:1}22.02%{opacity:1}39.98%{opacity:1}40%{opacity:1}41%{opacity:1}41.02%{opacity:1}40.48%{opacity:1}40.5%{opacity:.6}41.4%{opacity:.6}41.42%{opacity:1}41.98%{opacity:1}42%{opacity:1}42.8%{opacity:1}42.82%{opacity:1}59.98%{opacity:1}60%{opacity:1}61%{opacity:1}61.02%{opacity:1}60.18%{opacity:1}60.2%{opacity:.2}61%{opacity:.2}61.02%{opacity:1}60.78%{opacity:1}60.8%{opacity:.4}61.6%{opacity:.4}61.62%{opacity:1}61.38%{opacity:1}61.4%{opacity:0}62.2%{opacity:0}62.22%{opacity:1}61.78%{opacity:1}61.8%{opacity:1}62.8%{opacity:1}62.82%{opacity:1}75.98%{opacity:1}76%{opacity:1}77%{opacity:1}77.02%{opacity:1}77.98%{opacity:1}78%{opacity:.7}78.8%{opacity:.7}78.82%{opacity:1}78.98%{opacity:1}79%{opacity:1}80%{opacity:1}80.02%{opacity:1}99.98%{opacity:1}100%{opacity:1}}
