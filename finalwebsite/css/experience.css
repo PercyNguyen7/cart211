@@ -457,6 +457,33 @@ figure.n8 {
   background-size: auto 150%;
 }
 #s6 {
+  background: url(../images/bg1.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 35vh;
+  height:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+    padding: 2% 20%;
+}
+#s6 article {
+  font-family: Sketchtica, Arial;
+  color: #e2a76d;
+  font-size: 1.2em;
+
+}
+#s6 h2 {
+  color: #e2a76d;
+  font-size: 1.6em;
+  font-family: BlackBoard, arial;
+  /* align-self: flex-start; */
+  padding: 2% 20%;
+}
+
+#s7 {
   background: url(../images/bg3.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
@@ -467,12 +494,11 @@ figure.n8 {
   flex-direction: column;
   overflow: hidden;
 }
-#s6 p {
+#s7 p {
   font-family: Sketchtica, Arial;
   color: #e2a76d;
-  font-size: 1.2em;
+  font-size: 1.6em;
   margin-bottom: 1%;
-
 }
 .guide {
   opacity:0;
