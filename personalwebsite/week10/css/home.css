@@ -1,0 +1,116 @@
+@font-face {
+  font-family:BlackBoard;
+  src: url(fonts/BlackBoard.ttf);
+
+  font-family:Sketchtica;
+  src:url(fonts/Sketchtica.ttf);
+}
+
+* {
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+	}
+
+  html, body {
+  	height:100%;
+  }
+
+  #home {
+	height:100%;
+  width:100%;
+	background:url(../images/bg1.jpg) fixed center center no-repeat;
+	background-size:cover;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+
+}
+  #home h1 {
+  font-family: BlackBoard, Arial;
+  color:#E2A76D;
+	font-size:7em;
+  display:flex;
+  justify-content: center;
+  position: relative;
+  top:0px;
+  opacity:0;
+  animation: slideUp 4s cubic-bezier(.39,-0.3,.38,1.4) 1 forwards;
+}
+
+  #home h2 {
+  font-family: BlackBoard, Arial;
+  color:#E2A76D;
+  font-size:4em;
+  display:flex;
+  justify-content: center;
+    position: relative;
+  top:0px;
+  opacity:0;
+  animation:    slideUp 3s cubic-bezier(.39,-0.3,.38,1.4) 2s forwards,
+                blinker 3s 8s linear infinite;
+
+
+
+
+  }
+
+  #myNav {
+      line-height:10em;
+  font-family: BlackBoard, Arial;
+  color:#E2A76D;
+  display:flex;
+  justify-content: space-evenly;
+  /* position: relative;
+  top:0px;
+  animation: slideUp 1s cubic-bezier(.39,-0.3,.38,1.4) .5s 1 forwards; */
+}
+
+  #myNav .abt {
+    position: relative;
+    top:0px;
+    opacity:0;
+    animation: slideUp 3s cubic-bezier(.39,-0.3,.38,1.4) 2.5s 1 forwards;
+  }
+  #myNav .exp {
+    position: relative;
+    top:0px;
+    opacity:0;
+    animation: slideUp2 3s cubic-bezier(.39,-0.3,.38,1.4) 3.5s 1 forwards;
+  }
+  #myNav .help {
+    position: relative;
+    top:0px;
+    opacity:0;
+    animation: slideUp 3s cubic-bezier(.39,-0.3,.38,1.4) 4.5s 1 forwards;
+  }
+
+  #myNav a:link{
+    color:#E2A76D;
+    font-size:2.5em;
+    transition:all 0.5s;
+  }
+
+  #myNav a:hover{
+    font-size:3em;
+  }
+
+  #myNav a:visited{
+    color:#E2A76D;
+  }
+
+
+  @keyframes slideUp {
+	from {opacity:0; top:250px;}
+	to {opacity:1; top:0px;}
+}
+  @keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+  }
+  @keyframes slideUp2 {
+  from {opacity:0; top:350px;}
+  to {opacity:1; top:50px;}
+  }
