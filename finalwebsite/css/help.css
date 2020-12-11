@@ -104,7 +104,7 @@ nav a:hover {
   height: 1px;
   background-color: #E2A76D;
   animation:flicker-5 4s linear infinite both;
-
+  margin-bottom: 1%;
    }
 
 
@@ -113,7 +113,7 @@ nav a:hover {
   font-family: Sketchtica,Arial;
   color: #E2A76D;
   font-size: 1.2em;
-  padding:2% 20%;
+  padding:0.5% 20%;
 }
 .article a{
   color: #E2A76D;
