@@ -487,7 +487,7 @@ figure.n8 {
   background: url(../images/bg3.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -497,8 +497,10 @@ figure.n8 {
 #s7 p {
   font-family: Sketchtica, Arial;
   color: #e2a76d;
-  font-size: 1.6em;
+  font-size: 1.4em;
   margin-bottom: 1%;
+  padding:0% 20%;
+  text-align: center;
 }
 .guide {
   opacity:0;
