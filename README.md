@@ -1,3 +1,8 @@
-# cart211
+Personal Website:
+https://percynguyen7.github.io/cart211/personalwebsite/index.html
 
-My website: http://percynguyen7.github.io/cart211/personalwebsite/
+Midterm Website:
+https://percynguyen7.github.io/cart211/midtermwebsite/styleguide.html
+
+Final Website:
+https://percynguyen7.github.io/cart211/finalwebsite/home.html
