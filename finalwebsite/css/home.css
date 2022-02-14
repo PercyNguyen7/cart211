@@ -1,11 +1,15 @@
 @font-face {
-  font-family:BlackBoard;
-  src: url(fonts/BlackBoard.ttf);
-
   font-family:Sketchtica;
   src:url(fonts/Sketchtica.ttf);
 }
-
+@font-face{
+    font-family:DirtyBag;
+  src: url(fonts/DirtyBag.ttf);
+}
+@font-face{
+  font-family:BlackBoard;
+  src: url(fonts/BlackBoard.ttf);
+}
 * {
 		margin:0;
 		padding:0;

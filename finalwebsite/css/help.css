@@ -1,9 +1,14 @@
 @font-face {
-  font-family:BlackBoard;
-  src: url(fonts/BlackBoard.ttf);
-
   font-family:Sketchtica;
   src:url(fonts/Sketchtica.ttf);
+}
+@font-face{
+    font-family:DirtyBag;
+  src: url(fonts/DirtyBag.ttf);
+}
+@font-face{
+  font-family:BlackBoard;
+  src: url(fonts/BlackBoard.ttf);
 }
 
 * {
@@ -68,7 +73,7 @@ nav a:hover {
 #s1  {
   background:url(../images/bg1.jpg) no-repeat center center;
   background-size: cover;
-  font-family: BlackBoard, arial;
+  font-family: BlackBoard;
 
   width: 100%;
   min-height: 110vh;
